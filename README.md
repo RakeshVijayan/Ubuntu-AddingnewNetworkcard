@@ -1,4 +1,4 @@
-#Adding additional network card in Ubuntu 22.04
+# Adding additional network card in Ubuntu 22.04
 
 Add the network adapter as normal we follow 
 
@@ -34,19 +34,19 @@ network:
 network:
   ethernets:
     enp0s8:
-#      dhcp4: true
+#dhcp4: true
       addresses:
         -  192.168.56.3/24
-#      routes:
-#        - to: default
-#          via: 192.168.56.1
+#routes:
+#- to: default
+#via: 192.168.56.1
   version: 2
 
 
 Save and close the file and do the following command to make it persistent with out reboot the system. 
 
-netplan apply  
+> netplan apply  
 
 #Restarting the network demon in New ubuntu OS 
 
-systemctl restart systemd-networkd
+> systemctl restart systemd-networkd
