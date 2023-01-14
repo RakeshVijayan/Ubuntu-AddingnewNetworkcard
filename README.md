@@ -24,6 +24,7 @@ But you will face problem again if the system reboot, you couldn't find the addp
 /etc/netplan/file.yaml   
 
 # This is the network config written by 'ubiquity'
+```
 #First interface  enp0s3
 network:
   ethernets:
@@ -42,7 +43,7 @@ network:
 #via: 192.168.56.1
   version: 2
 
-
+```
 Save and close the file and do the following command to make it persistent with out reboot the system. 
 
 > netplan apply  
